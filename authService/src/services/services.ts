@@ -7,5 +7,5 @@ export const createUserService= async(user:Iuser)=>{
 }
 
 export const findEmailService= async (email:string)=>{
-    return  await UserModel.find({email:email})
+    return  await UserModel.findOne({email:email})
 }
